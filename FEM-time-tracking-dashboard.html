@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Stop Watch - Minor Project</title>
+    <title>Portfolio Details - Personal Bootstrap Template</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -55,7 +55,10 @@
             <div class="col-lg-8">
               <div class="portfolio-details-slider swiper">
                 <div class="swiper-wrapper align-items-center">
-                  <img src="assets/img/portfolio/stop-watch.png" alt="" />
+                  <img
+                    src="assets/img/portfolio/FEM Time tracking dashboard.png"
+                    alt=""
+                  />
                 </div>
                 <div class="swiper-pagination"></div>
               </div>
@@ -63,30 +66,27 @@
 
             <div class="col-lg-4">
               <div class="portfolio-info">
-                <h3>Stop Watch Project information</h3>
+                <h3>Time Tracking Dashboard</h3>
                 <ul>
-                  <li><strong>Category</strong>: Small Project</li>
-                  <li>
-                    <strong>Purpose</strong>: Learn Intervals and Event
-                    Listeners
-                  </li>
-                  <li><strong>Project date</strong>: 29 September, 2020</li>
+                  <li><strong>Category</strong>: Portfolio Project</li>
+                  <li><strong>Purpose</strong>: Design Replication</li>
+                  <li><strong>Project date</strong>: 04 June, 2022</li>
                   <li>
                     <strong>Project URL</strong>:
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://codepen.io/Dr_Wrong/full/RwRNWXe"
-                      >https://codepen.io/Dr_Wrong/full/RwRNWXe</a
+                      href="https://fem-time-tracking.netlify.app/"
+                      >fem-time-tracking.netlify.app/</a
                     >
                   </li>
                   <li>
-                    <strong>See the Code</strong>:
+                    <strong>GitHub Repo</strong>:
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://codepen.io/Dr_Wrong/pen/RwRNWXe"
-                      >Pen with Code</a
+                      href="https://github.com/Dr-Wrong-Mo/FEM-time-tracking-dashboard"
+                      >github.com/Dr-Wrong-Mo/FEM-time-tracking-dashboard</a
                     >
                   </li>
                 </ul>
@@ -94,14 +94,34 @@
               <div class="portfolio-description">
                 <h2>Portfolio Project</h2>
                 <p>
-                  This was a small project I made early on, simply to learn to work with
-                  intervals and I event listeners. In addition to on-screen
-                  buttons, I added event listeners to some key press events. Users can press the space bar to start and stop the
-                  timer, or press "r" to reset the timer.
+                  This is the second Frontend Mentor project that I completed.
+                  As far as design replication goes, it was not a challenging
+                  project for me as I have worked with Grid and Flexbox a good
+                  deal at this point. The challenge was to recreate the design
+                  and allow users to switch between Daily, Weekly and Monthly
+                  views. In addition to that, a JSON file was provided which
+                  could be used to import the data instead of having it
+                  hardcoded.
                 </p>
                 <p>
-                  I don't expect that I will disrupt the stop watch market, but it was a
-                  fun project.
+                  I non only wanted to use JSON, but I wanted to ensure that if
+                  the JSON was imported in a different order than the card
+                  elements on the page, that the card elements would stay in the
+                  same order and the data would not be assigned to the incorrect
+                  card.
+                </p>
+                <p>
+                  To make that happen, I created some data validation filters to
+                  compare the card title to the category in the JSON.
+                </p>
+                <p>
+                  This project wasn't complex enough to warrant a framework, but
+                  I did want to use SCSS to keep my code a bit cleaner. While I
+                  could have simply compiled my SCSS using the terminal, I
+                  wanted to use a tool that would auto reload any changes I
+                  made. I though Webpack would be just the right tool for this
+                  job. It took a bit of work to set Webpack up, but once that
+                  was in place, the development and deployment were quite easy.
                 </p>
               </div>
             </div>

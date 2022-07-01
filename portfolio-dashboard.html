@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Stop Watch - Minor Project</title>
+    <title>Portfolio Details - Personal Bootstrap Template</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -55,7 +55,14 @@
             <div class="col-lg-8">
               <div class="portfolio-details-slider swiper">
                 <div class="swiper-wrapper align-items-center">
-                  <img src="assets/img/portfolio/stop-watch.png" alt="" />
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/portfolio-dashboard.png" alt="Dashboard Screenshot" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/portfolio-dashboard-mobile-1.png" alt="Dashboard Mobile Screenshot" />
+                  </div>
+
                 </div>
                 <div class="swiper-pagination"></div>
               </div>
@@ -63,30 +70,27 @@
 
             <div class="col-lg-4">
               <div class="portfolio-info">
-                <h3>Stop Watch Project information</h3>
+                <h3>Dashboard Project information</h3>
                 <ul>
-                  <li><strong>Category</strong>: Small Project</li>
-                  <li>
-                    <strong>Purpose</strong>: Learn Intervals and Event
-                    Listeners
-                  </li>
-                  <li><strong>Project date</strong>: 29 September, 2020</li>
+                  <li><strong>Category</strong>: Weather App</li>
+                  <li><strong>Purpose</strong>: Personal Homepage</li>
+                  <li><strong>Project date</strong>: 16 April, 2022</li>
                   <li>
                     <strong>Project URL</strong>:
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://codepen.io/Dr_Wrong/full/RwRNWXe"
-                      >https://codepen.io/Dr_Wrong/full/RwRNWXe</a
+                      href="https://dashboard-jw.netlify.app/"
+                      >dashboard-jw.netlify.app</a
                     >
                   </li>
                   <li>
-                    <strong>See the Code</strong>:
+                    <strong>GitHub Repo</strong>:
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://codepen.io/Dr_Wrong/pen/RwRNWXe"
-                      >Pen with Code</a
+                      href="https://github.com/Dr-Wrong-Mo/dashboard"
+                      >github.com/Dr-Wrong-Mo/dashboard</a
                     >
                   </li>
                 </ul>
@@ -94,14 +98,43 @@
               <div class="portfolio-description">
                 <h2>Portfolio Project</h2>
                 <p>
-                  This was a small project I made early on, simply to learn to work with
-                  intervals and I event listeners. In addition to on-screen
-                  buttons, I added event listeners to some key press events. Users can press the space bar to start and stop the
-                  timer, or press "r" to reset the timer.
+                  I was tired of using the default Mozilla startup page with all
+                  the paid ads. I wanted to have a homepage that would show me
+                  the weather, a calendar and have a number of links I can
+                  customize.
                 </p>
                 <p>
-                  I don't expect that I will disrupt the stop watch market, but it was a
-                  fun project.
+                  This project was small enough that it didn't need a framework
+                  like Angular or React. Still though, I wanted to be able to be
+                  able to import my JS files as modules to keep my code cleaner
+                  and I wanted something to manage my SCSS compilation for me.
+                  After some reading, I chose to use Webpack for this project.
+                </p>
+                <p>
+                  For this app, I get the weather from the NOAA API by making
+                  three seperate API calls. First, I send my device coordinates,
+                  which returns the NOAA region that I am in, as well as links
+                  to a number of other API calls that are available. From this
+                  list, I make a call for the hourly forecast as well as the
+                  daily forecast.
+                </p>
+                <p>
+                  I also get my current city location by making reverse geocode
+                  call to the
+                  <a
+                    href="https://www.bigdatacloud.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Big Data Cloud API</a
+                  >.
+                </p>
+                <p>
+                  As of now, the weather data only updates text on the screen,
+                  but my initial thought was to use the weather data to change
+                  the background image for the page and using SVG weather icons.
+                  Technically, that's a pretty straightforward problem. The
+                  biggest challenge is accounting for all possible variations of
+                  weather.
                 </p>
               </div>
             </div>
